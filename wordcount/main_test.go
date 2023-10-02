@@ -15,10 +15,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 )
 
-const wordcountImportPath = "gitlab.com/slon/shad-go/wordcount"
+const wordcountImportPath = "gitlab.com/manytask/itmo-go/private/wordcount"
 
 var binCache testtool.BinCache
 
@@ -85,7 +85,7 @@ b`,
 			var files []string
 			for _, f := range tc.files {
 				file := path.Join(testDir, testtool.RandomName())
-				err = ioutil.WriteFile(file, []byte(f), 0644)
+				err = ioutil.WriteFile(file, []byte(f), 0o644)
 				require.NoError(t, err)
 				files = append(files, file)
 			}

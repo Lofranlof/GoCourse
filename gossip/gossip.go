@@ -5,7 +5,7 @@ package gossip
 import (
 	"time"
 
-	"gitlab.com/slon/shad-go/gossip/meshpb"
+	"gitlab.com/manytask/itmo-go/private/gossip/meshpb"
 	"google.golang.org/grpc"
 )
 

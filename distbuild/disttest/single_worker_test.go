@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
 )
 
 var singleWorkerConfig = &Config{WorkerCount: 1}
@@ -62,7 +62,7 @@ func TestJobCaching(t *testing.T) {
 	assert.Len(t, recorder.Jobs, 1)
 	assert.Equal(t, &JobResult{Stdout: "OK\n", Code: new(int)}, recorder.Jobs[build.ID{'a'}])
 
-	require.NoError(t, ioutil.WriteFile(tmpFile.Name(), []byte("NOTOK\n"), 0666))
+	require.NoError(t, ioutil.WriteFile(tmpFile.Name(), []byte("NOTOK\n"), 0o666))
 
 	// Second build must get results from cache.
 	require.NoError(t, env.Client.Build(env.Ctx, graph, NewRecorder()))

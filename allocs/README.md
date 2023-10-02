@@ -15,7 +15,7 @@
 ```
 goos: linux
 goarch: amd64
-pkg: gitlab.com/slon/shad-go/allocs
+pkg: gitlab.com/manytask/itmo-go/private/allocs
 Benchmark/count-4                  73200             16294 ns/op             880 B/op          5 allocs/op
 Benchmark/main-4                   40485             30113 ns/op            1034 B/op          9 allocs/op
 ```
@@ -23,7 +23,7 @@ Benchmark/main-4                   40485             30113 ns/op            1034
 Значения бенчмарков для авторского решения:
 ```goos: linux
    goarch: amd64
-   pkg: gitlab.com/slon/shad-go/allocs
+   pkg: gitlab.com/manytask/itmo-go/private/allocs
    Benchmark/count-4                 212850              5471 ns/op            4144 B/op          2 allocs/op
    Benchmark/main-4                  143937              8247 ns/op            4176 B/op          3 allocs/op
 ```

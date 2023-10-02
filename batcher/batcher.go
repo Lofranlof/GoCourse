@@ -2,10 +2,9 @@
 
 package batcher
 
-import "gitlab.com/slon/shad-go/batcher/slow"
+import "gitlab.com/manytask/itmo-go/private/batcher/slow"
 
-type Batcher struct {
-}
+type Batcher struct{}
 
 func NewBatcher(v *slow.Value) *Batcher {
 	return nil

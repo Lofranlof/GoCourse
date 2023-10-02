@@ -1,4 +1,4 @@
-module gitlab.com/slon/shad-go/wasm/flappygopher
+module gitlab.com/manytask/itmo-go/private/wasm/flappygopher
 
 go 1.20
 

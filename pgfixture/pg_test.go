@@ -7,7 +7,7 @@ import (
 	"github.com/jackc/pgx/v4"
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/pgfixture"
+	"gitlab.com/manytask/itmo-go/private/pgfixture"
 )
 
 func TestLocalPostgres(t *testing.T) {

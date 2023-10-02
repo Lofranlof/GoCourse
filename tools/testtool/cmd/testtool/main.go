@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gitlab.com/slon/shad-go/tools/testtool/commands"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool/commands"
 )
 
 func main() {

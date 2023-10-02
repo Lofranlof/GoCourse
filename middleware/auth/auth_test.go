@@ -9,7 +9,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/stretchr/testify/require"
-	"gitlab.com/slon/shad-go/middleware/auth"
+	"gitlab.com/manytask/itmo-go/private/middleware/auth"
 )
 
 type fakeChecker map[string]struct {
@@ -68,11 +68,9 @@ func TestAuth(t *testing.T) {
 	})
 
 	t.Run("InvalidToken", func(t *testing.T) {
-
 	})
 
 	t.Run("DatabaseError", func(t *testing.T) {
-
 	})
 
 	t.Run("GoodToken", func(t *testing.T) {

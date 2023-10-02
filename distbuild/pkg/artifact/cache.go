@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
 )
 
 var (
@@ -34,18 +34,18 @@ func NewCache(root string) (*Cache, error) {
 	if err := os.RemoveAll(tmpDir); err != nil {
 		return nil, err
 	}
-	if err := os.MkdirAll(tmpDir, 0777); err != nil {
+	if err := os.MkdirAll(tmpDir, 0o777); err != nil {
 		return nil, err
 	}
 
 	cacheDir := filepath.Join(root, "c")
-	if err := os.MkdirAll(cacheDir, 0777); err != nil {
+	if err := os.MkdirAll(cacheDir, 0o777); err != nil {
 		return nil, err
 	}
 
 	for i := 0; i < 256; i++ {
 		d := hex.EncodeToString([]byte{uint8(i)})
-		if err := os.MkdirAll(filepath.Join(cacheDir, d), 0777); err != nil {
+		if err := os.MkdirAll(filepath.Join(cacheDir, d), 0o777); err != nil {
 			return nil, err
 		}
 	}
@@ -151,7 +151,7 @@ func (c *Cache) Create(artifact build.ID) (path string, commit, abort func() err
 	}
 
 	path = filepath.Join(c.tmpDir, artifact.String())
-	if err = os.MkdirAll(path, 0777); err != nil {
+	if err = os.MkdirAll(path, 0o777); err != nil {
 		c.writeUnlock(artifact)
 		return
 	}

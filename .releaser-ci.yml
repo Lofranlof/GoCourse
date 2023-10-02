@@ -48,14 +48,14 @@ push-to-public:
     - master
   script:
     - git remote rm public || true
-    - git remote add -f public https://prime:${CI_PUSH_TOKEN}@gitlab.com/slon/shad-go.git
-    - git config --global user.email 'prime@yandex-team.ru'
-    - git config --global user.name 'Fedor Korotkiy'
+    - git remote add -f public https://svparamoshkin:${CI_PUSH_TOKEN}@gitlab.manytask.org/go/public-itmo-2023-fall
+    - git config --global user.email 'svparamoshkin@yandex-team.ru'
+    - git config --global user.name 'svparamoshkin'
     - git fetch public
     - git branch -D public || true
     - git branch public public/master
     - testtool export --push --move-to-master=false
-    - curl -F token=$TESTER_TOKEN https://go.manytask.org/api/sync_task_columns
+    - curl -F token=$TESTER_TOKEN http://itmo-go.manytask.org/api/sync_task_columns
 
 push-to-github:
   stage: .post

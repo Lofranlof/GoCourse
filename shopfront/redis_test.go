@@ -9,7 +9,7 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 )
 
 type testingTB interface {

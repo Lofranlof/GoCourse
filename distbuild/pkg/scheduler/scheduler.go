@@ -8,8 +8,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/api"
-	"gitlab.com/slon/shad-go/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/api"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
 )
 
 var TimeAfter = time.After
@@ -25,8 +25,7 @@ type Config struct {
 	DepsTimeout  time.Duration
 }
 
-type Scheduler struct {
-}
+type Scheduler struct{}
 
 func NewScheduler(l *zap.Logger, config Config) *Scheduler {
 	panic("implement me")

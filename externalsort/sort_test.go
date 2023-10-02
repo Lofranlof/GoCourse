@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 )
 
 func TestMerge(t *testing.T) {
@@ -138,7 +138,7 @@ func copyFile(t *testing.T, f, dir string) string {
 	require.NoError(t, err)
 
 	dst := path.Join(dir, path.Base(f))
-	err = ioutil.WriteFile(dst, data, 0644)
+	err = ioutil.WriteFile(dst, data, 0o644)
 	require.NoError(t, err)
 
 	return dst

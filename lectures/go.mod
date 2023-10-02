@@ -1,4 +1,4 @@
-module gitlab.com/slon/shad-go/lectures
+module gitlab.com/manytask/itmo-go/private/lectures
 
 go 1.20
 

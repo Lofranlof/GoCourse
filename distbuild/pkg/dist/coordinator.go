@@ -8,12 +8,11 @@ import (
 
 	"go.uber.org/zap"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/filecache"
-	"gitlab.com/slon/shad-go/distbuild/pkg/scheduler"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/filecache"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/scheduler"
 )
 
-type Coordinator struct {
-}
+type Coordinator struct{}
 
 var defaultConfig = scheduler.Config{
 	CacheTimeout: time.Millisecond * 10,

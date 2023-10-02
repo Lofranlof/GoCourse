@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gitlab.com/slon/shad-go/illegal"
-	"gitlab.com/slon/shad-go/illegal/internal"
+	"gitlab.com/manytask/itmo-go/private/illegal"
+	"gitlab.com/manytask/itmo-go/private/illegal/internal"
 )
 
 func TestIllegalField(t *testing.T) {

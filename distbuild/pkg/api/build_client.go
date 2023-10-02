@@ -7,11 +7,10 @@ import (
 
 	"go.uber.org/zap"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
 )
 
-type BuildClient struct {
-}
+type BuildClient struct{}
 
 func NewBuildClient(l *zap.Logger, endpoint string) *BuildClient {
 	panic("implement me")

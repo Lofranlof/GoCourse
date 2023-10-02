@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"gitlab.com/slon/shad-go/poorcoverage"
+	"gitlab.com/manytask/itmo-go/private/poorcoverage"
 )
 
 // min coverage: . 100%

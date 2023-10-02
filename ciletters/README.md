@@ -35,7 +35,7 @@ Your pipeline #194613 has failed! // 194613 -- это ID pipeline'а
             // Далее идут последние 10 строк лога gitlab runner'а
             testtool: copying go.mod, go.sum and .golangci.yml
             testtool: running tests
-            testtool: > go test -mod readonly -tags private -c -o /tmp/bincache730817117/5d83984f885e61c1 gitlab.com/slon/shad-go/sum
+            testtool: > go test -mod readonly -tags private -c -o /tmp/bincache730817117/5d83984f885e61c1 gitlab.com/manytask/itmo-go/private/sum
             --- FAIL: TestSum (0.00s)
                 sum_test.go:19: 2 + 2 == 0 != 4
                 sum_test.go:19: 9223372036854775807 + 1 == 0 != -9223372036854775808

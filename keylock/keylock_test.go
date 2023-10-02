@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"gitlab.com/slon/shad-go/keylock"
+	"gitlab.com/manytask/itmo-go/private/keylock"
 )
 
 func timeout(d time.Duration) <-chan struct{} {

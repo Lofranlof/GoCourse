@@ -3,7 +3,7 @@
 Для работы с кодом нужен go 1.18 или выше.
 
 ```sh
-git clone https://gitlab.com/slon/shad-go.git
+git clone https://gitlab.com/manytask/itmo-go/private.git
 cd shad-go
 go test ./sum/...
 ```

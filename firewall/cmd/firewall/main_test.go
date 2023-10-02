@@ -15,10 +15,10 @@ import (
 	"github.com/go-resty/resty/v2"
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 )
 
-const importPath = "gitlab.com/slon/shad-go/firewall/cmd/firewall"
+const importPath = "gitlab.com/manytask/itmo-go/private/firewall/cmd/firewall"
 
 var binCache testtool.BinCache
 
@@ -36,7 +36,7 @@ func storeConfig(t *testing.T, conf string) (filename string, cleanup func()) {
 	t.Helper()
 
 	filename = path.Join(os.TempDir(), testtool.RandomName()+".yaml")
-	err := ioutil.WriteFile(filename, []byte(conf), 0777)
+	err := ioutil.WriteFile(filename, []byte(conf), 0o777)
 	require.NoError(t, err)
 
 	cleanup = func() { _ = os.Remove(filename) }

@@ -17,10 +17,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 )
 
-const fetchallImportPath = "gitlab.com/slon/shad-go/fetchall"
+const fetchallImportPath = "gitlab.com/manytask/itmo-go/private/fetchall"
 
 var binCache testtool.BinCache
 

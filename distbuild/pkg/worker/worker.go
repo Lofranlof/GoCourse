@@ -8,13 +8,12 @@ import (
 
 	"go.uber.org/zap"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/api"
-	"gitlab.com/slon/shad-go/distbuild/pkg/artifact"
-	"gitlab.com/slon/shad-go/distbuild/pkg/filecache"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/api"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/artifact"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/filecache"
 )
 
-type Worker struct {
-}
+type Worker struct{}
 
 func New(
 	workerID api.WorkerID,

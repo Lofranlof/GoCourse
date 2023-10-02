@@ -3,7 +3,7 @@
 
 package sum
 
-import "gitlab.com/slon/shad-go/sum/pkg"
+import "gitlab.com/manytask/itmo-go/private/sum/pkg"
 
 func Sum(a, b int64) int64 {
 	pkg.F()

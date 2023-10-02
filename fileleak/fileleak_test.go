@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/fileleak"
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/fileleak"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 )
 
 type fakeT struct {
@@ -129,7 +129,6 @@ func TestFileLeak_DupLeak(t *testing.T) {
 		var err error
 		fd, err = syscall.Dup(1)
 		require.NoError(t, err)
-
 	})
 }
 

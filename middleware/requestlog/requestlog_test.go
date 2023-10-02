@@ -11,7 +11,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest/observer"
 
-	"gitlab.com/slon/shad-go/middleware/requestlog"
+	"gitlab.com/manytask/itmo-go/private/middleware/requestlog"
 )
 
 func TestRequestLog(t *testing.T) {

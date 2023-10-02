@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/gzep"
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/gzep"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 )
 
 func BenchmarkEncode(b *testing.B) {
@@ -47,7 +47,6 @@ func TestEncode_RoundTrip(t *testing.T) {
 			require.NoError(t, err, tc.in)
 			require.Equal(t, tc.in, string(out))
 		})
-
 	}
 }
 

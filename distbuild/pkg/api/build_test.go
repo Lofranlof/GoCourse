@@ -12,9 +12,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/api"
-	mock "gitlab.com/slon/shad-go/distbuild/pkg/api/mock"
-	"gitlab.com/slon/shad-go/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/api"
+	mock "gitlab.com/manytask/itmo-go/private/distbuild/pkg/api/mock"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
 )
 
 //go:generate mockgen -package mock -destination mock/mock.go . Service
@@ -56,8 +56,8 @@ func TestBuildSignal(t *testing.T) {
 
 	ctx := context.Background()
 
-	buildIDa := build.ID{01}
-	buildIDb := build.ID{02}
+	buildIDa := build.ID{0o1}
+	buildIDb := build.ID{0o2}
 	req := &api.SignalRequest{}
 	rsp := &api.SignalResponse{}
 
@@ -91,10 +91,10 @@ func TestBuildRunning(t *testing.T) {
 
 	ctx := context.Background()
 
-	buildID := build.ID{02}
+	buildID := build.ID{0o2}
 
 	req := &api.BuildRequest{
-		Graph: build.Graph{SourceFiles: map[build.ID]string{{01}: "a.txt"}},
+		Graph: build.Graph{SourceFiles: map[build.ID]string{{0o1}: "a.txt"}},
 	}
 
 	started := &api.BuildStarted{ID: buildID}
@@ -141,7 +141,7 @@ func TestBuildResultsStreaming(t *testing.T) {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
-	buildID := build.ID{02}
+	buildID := build.ID{0o2}
 	req := &api.BuildRequest{}
 	started := &api.BuildStarted{ID: buildID}
 

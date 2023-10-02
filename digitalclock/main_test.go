@@ -18,10 +18,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 )
 
-const importPath = "gitlab.com/slon/shad-go/digitalclock"
+const importPath = "gitlab.com/manytask/itmo-go/private/digitalclock"
 
 var binCache testtool.BinCache
 

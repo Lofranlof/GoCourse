@@ -18,7 +18,7 @@
 ```
 goos: linux
 goarch: amd64
-pkg: gitlab.com/slon/shad-go/utf8/reverse
+pkg: gitlab.com/manytask/itmo-go/private/utf8/reverse
 BenchmarkReverse-4   	  395078	      2763 ns/op	    1792 B/op	       2 allocs/op
 PASS
 ```

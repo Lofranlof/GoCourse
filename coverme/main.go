@@ -5,8 +5,8 @@ package main
 import (
 	"flag"
 
-	"gitlab.com/slon/shad-go/coverme/app"
-	"gitlab.com/slon/shad-go/coverme/models"
+	"gitlab.com/manytask/itmo-go/private/coverme/app"
+	"gitlab.com/manytask/itmo-go/private/coverme/models"
 )
 
 func main() {

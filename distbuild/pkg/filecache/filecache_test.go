@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/build"
-	"gitlab.com/slon/shad-go/distbuild/pkg/filecache"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/filecache"
 )
 
 type testCache struct {
@@ -36,21 +36,21 @@ func (c *testCache) cleanup() {
 func TestFileCache(t *testing.T) {
 	cache := newCache(t)
 
-	_, abort, err := cache.Write(build.ID{01})
+	_, abort, err := cache.Write(build.ID{0o1})
 	require.NoError(t, err)
 	require.NoError(t, abort())
 
-	_, _, err = cache.Get(build.ID{01})
+	_, _, err = cache.Get(build.ID{0o1})
 	require.Truef(t, errors.Is(err, filecache.ErrNotFound), "%v", err)
 
-	f, _, err := cache.Write(build.ID{02})
+	f, _, err := cache.Write(build.ID{0o2})
 	require.NoError(t, err)
 
 	_, err = f.Write([]byte("foo bar"))
 	require.NoError(t, err)
 	require.NoError(t, f.Close())
 
-	path, unlock, err := cache.Get(build.ID{02})
+	path, unlock, err := cache.Get(build.ID{0o2})
 	require.NoError(t, err)
 	defer unlock()
 

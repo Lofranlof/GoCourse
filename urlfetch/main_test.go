@@ -15,10 +15,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 )
 
-const urlfetchImportPath = "gitlab.com/slon/shad-go/urlfetch"
+const urlfetchImportPath = "gitlab.com/manytask/itmo-go/private/urlfetch"
 
 var binCache testtool.BinCache
 
@@ -98,7 +98,6 @@ func TestURLFetch_valid(t *testing.T) {
 				require.True(t, bytes.Contains(data, []byte(r)),
 					fmt.Sprintf(`output="%s" does not contain expected response="%s"`, data, r))
 			}
-
 		})
 	}
 }

@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gitlab.com/slon/shad-go/treeiter"
+	"gitlab.com/manytask/itmo-go/private/treeiter"
 )
 
 type ValuesNode[T any] struct {

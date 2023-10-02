@@ -11,21 +11,19 @@ import (
 	"go.uber.org/goleak"
 	"go.uber.org/zap/zaptest"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/api"
-	"gitlab.com/slon/shad-go/distbuild/pkg/build"
-	"gitlab.com/slon/shad-go/distbuild/pkg/scheduler"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/api"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/scheduler"
 )
 
 const (
 	workerID0 api.WorkerID = "w0"
 )
 
-var (
-	config = scheduler.Config{
-		CacheTimeout: time.Second,
-		DepsTimeout:  time.Minute,
-	}
-)
+var config = scheduler.Config{
+	CacheTimeout: time.Second,
+	DepsTimeout:  time.Minute,
+}
 
 type testScheduler struct {
 	*scheduler.Scheduler

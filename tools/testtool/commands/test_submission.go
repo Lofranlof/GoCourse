@@ -17,7 +17,7 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/perf/benchstat"
 
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 )
 
 const (
@@ -26,7 +26,7 @@ const (
 	privateRepoFlag = "private-repo"
 
 	testdataDir      = "testdata"
-	moduleImportPath = "gitlab.com/slon/shad-go"
+	moduleImportPath = "gitlab.com/manytask/itmo-go/private"
 )
 
 var testSubmissionCmd = &cobra.Command{
@@ -94,7 +94,7 @@ func testSubmission(studentRepo, privateRepo, problem string) error {
 	if err != nil {
 		log.Fatal(err)
 	}
-	if err := os.Chmod(tmpRepo, 0755); err != nil {
+	if err := os.Chmod(tmpRepo, 0o755); err != nil {
 		log.Fatal(err)
 	}
 	defer func() { _ = os.RemoveAll(tmpRepo) }()
@@ -213,7 +213,7 @@ func runTests(testDir, privateRepo, problem string) error {
 	if err != nil {
 		log.Fatal(err)
 	}
-	if err = os.Chmod(binCache, 0755); err != nil {
+	if err = os.Chmod(binCache, 0o755); err != nil {
 		log.Fatal(err)
 	}
 
@@ -222,7 +222,7 @@ func runTests(testDir, privateRepo, problem string) error {
 	if err != nil {
 		log.Fatal(err)
 	}
-	if err = os.Chmod(goCache, 0777); err != nil {
+	if err = os.Chmod(goCache, 0o777); err != nil {
 		log.Fatal(err)
 	}
 
@@ -253,7 +253,7 @@ func runTests(testDir, privateRepo, problem string) error {
 		testListDir = privateRepo
 	}
 
-	//binPkgs, testPkgs := listTestsAndBinaries(filepath.Join(testDir, problem), []string{"-tags", "private", "-mod", "readonly"}) // todo return readonly
+	// binPkgs, testPkgs := listTestsAndBinaries(filepath.Join(testDir, problem), []string{"-tags", "private", "-mod", "readonly"}) // todo return readonly
 	binPkgs, testPkgs := listTestsAndBinaries(filepath.Join(testListDir, problem), []string{"-tags", "private"})
 	for binaryPkg := range binPkgs {
 		binPath := filepath.Join(binCache, randomName())

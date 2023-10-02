@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/coverme"
+	"gitlab.com/manytask/itmo-go/private/coverme"
 )
 
 // min coverage: .,subpkg 70%

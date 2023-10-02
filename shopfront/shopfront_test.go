@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"gitlab.com/slon/shad-go/shopfront"
+	"gitlab.com/manytask/itmo-go/private/shopfront"
 )
 
 func TestShopfront(t *testing.T) {

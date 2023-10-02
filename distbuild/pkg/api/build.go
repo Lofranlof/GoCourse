@@ -3,7 +3,7 @@ package api
 import (
 	"context"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
 )
 
 type BuildRequest struct {
@@ -25,8 +25,7 @@ type BuildFailed struct {
 	Error string
 }
 
-type BuildFinished struct {
-}
+type BuildFinished struct{}
 
 type UploadDone struct{}
 
@@ -34,8 +33,7 @@ type SignalRequest struct {
 	UploadDone *UploadDone
 }
 
-type SignalResponse struct {
-}
+type SignalResponse struct{}
 
 type StatusWriter interface {
 	Started(rsp *BuildStarted) error

@@ -1,6 +1,6 @@
 package retryupdate_test
 
-//go:generate mockgen -destination mock_test.go -package retryupdate_test gitlab.com/slon/shad-go/retryupdate/kvapi Client
+//go:generate mockgen -destination mock_test.go -package retryupdate_test gitlab.com/manytask/itmo-go/private/retryupdate/kvapi Client
 
 import (
 	"errors"
@@ -11,8 +11,8 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/slon/shad-go/retryupdate"
-	"gitlab.com/slon/shad-go/retryupdate/kvapi"
+	"gitlab.com/manytask/itmo-go/private/retryupdate"
+	"gitlab.com/manytask/itmo-go/private/retryupdate/kvapi"
 )
 
 var (
@@ -126,6 +126,7 @@ func TestUpdateFnError(t *testing.T) {
 
 	require.Equal(t, errUpdate, retryupdate.UpdateValue(c, K0, updateFn))
 }
+
 func TestCreateKey(t *testing.T) {
 	ctrl := gomock.NewController(t)
 	defer ctrl.Finish()

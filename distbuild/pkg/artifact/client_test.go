@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/artifact"
-	"gitlab.com/slon/shad-go/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/artifact"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
 )
 
 func TestArtifactTransfer(t *testing.T) {
@@ -23,7 +23,7 @@ func TestArtifactTransfer(t *testing.T) {
 
 	dir, commit, _, err := remoteCache.Create(id)
 	require.NoError(t, err)
-	require.NoError(t, ioutil.WriteFile(filepath.Join(dir, "a.txt"), []byte("foobar"), 0777))
+	require.NoError(t, ioutil.WriteFile(filepath.Join(dir, "a.txt"), []byte("foobar"), 0o777))
 	require.NoError(t, commit())
 
 	l := zaptest.NewLogger(t)

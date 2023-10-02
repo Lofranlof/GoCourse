@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"gitlab.com/slon/shad-go/ledger"
-	"gitlab.com/slon/shad-go/pgfixture"
+	"gitlab.com/manytask/itmo-go/private/ledger"
+	"gitlab.com/manytask/itmo-go/private/pgfixture"
 )
 
 func TestLedger(t *testing.T) {

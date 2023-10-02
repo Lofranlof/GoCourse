@@ -3,7 +3,7 @@ package treeiter_test
 import (
 	"fmt"
 
-	"gitlab.com/slon/shad-go/treeiter"
+	"gitlab.com/manytask/itmo-go/private/treeiter"
 )
 
 func ExampleDoInOrder() {

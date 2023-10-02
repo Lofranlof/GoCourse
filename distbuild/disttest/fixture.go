@@ -17,13 +17,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"gitlab.com/slon/shad-go/distbuild/pkg/api"
-	"gitlab.com/slon/shad-go/distbuild/pkg/artifact"
-	"gitlab.com/slon/shad-go/distbuild/pkg/client"
-	"gitlab.com/slon/shad-go/distbuild/pkg/dist"
-	"gitlab.com/slon/shad-go/distbuild/pkg/filecache"
-	"gitlab.com/slon/shad-go/distbuild/pkg/worker"
-	"gitlab.com/slon/shad-go/tools/testtool"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/api"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/artifact"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/client"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/dist"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/filecache"
+	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/worker"
+	"gitlab.com/manytask/itmo-go/private/tools/testtool"
 
 	"go.uber.org/zap"
 )
@@ -60,7 +60,7 @@ func newEnv(t *testing.T, config *Config) (e *env, cancel func()) {
 	rootDir := filepath.Join(absCWD, "workdir", t.Name())
 	require.NoError(t, os.RemoveAll(rootDir))
 
-	if err = os.MkdirAll(rootDir, 0777); err != nil {
+	if err = os.MkdirAll(rootDir, 0o777); err != nil {
 		if errors.Is(err, os.ErrPermission) {
 			rootDir, err = ioutil.TempDir("", "")
 			require.NoError(t, err)
@@ -193,8 +193,8 @@ func newEnv(t *testing.T, config *Config) (e *env, cancel func()) {
 func newWinFileSink(u *url.URL) (zap.Sink, error) {
 	if len(u.Opaque) > 0 {
 		// Remove leading slash left by url.Parse()
-		return os.OpenFile(u.Opaque[1:], os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
+		return os.OpenFile(u.Opaque[1:], os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0o644)
 	}
 	// if url.URL is empty, don't panic slice index error
-	return os.OpenFile(u.Opaque, os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
+	return os.OpenFile(u.Opaque, os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0o644)
 }
