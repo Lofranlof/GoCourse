@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/build"
 )
 
 var (

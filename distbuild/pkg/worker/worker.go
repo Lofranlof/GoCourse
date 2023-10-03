@@ -8,9 +8,9 @@ import (
 
 	"go.uber.org/zap"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/api"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/artifact"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/filecache"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/api"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/artifact"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/filecache"
 )
 
 type Worker struct{}

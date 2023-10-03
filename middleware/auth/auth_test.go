@@ -9,7 +9,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/stretchr/testify/require"
-	"gitlab.com/manytask/itmo-go/private/middleware/auth"
+	"gitlab.com/manytask/itmo-go/public/middleware/auth"
 )
 
 type fakeChecker map[string]struct {

@@ -39,13 +39,13 @@ func TestListPackages(t *testing.T) {
 	binaries, tests := listTestsAndBinaries("../testdata/pkgfind/task", []string{"-tags", "private"})
 
 	assert.Equal(t, binaries, map[string]struct{}{
-		"gitlab.com/manytask/itmo-go/private/task/cmd/tool":           {},
-		"gitlab.com/manytask/itmo-go/private/task/cmd/tool_with_test": {},
+		"gitlab.com/manytask/itmo-go/public/task/cmd/tool":           {},
+		"gitlab.com/manytask/itmo-go/public/task/cmd/tool_with_test": {},
 	})
 
 	assert.Equal(t, tests, map[string]struct{}{
-		"gitlab.com/manytask/itmo-go/private/task/cmd/tool_with_test": {},
-		"gitlab.com/manytask/itmo-go/private/task/pkg/a":              {},
-		"gitlab.com/manytask/itmo-go/private/task/pkg/c":              {},
+		"gitlab.com/manytask/itmo-go/public/task/cmd/tool_with_test": {},
+		"gitlab.com/manytask/itmo-go/public/task/pkg/a":              {},
+		"gitlab.com/manytask/itmo-go/public/task/pkg/c":              {},
 	})
 }

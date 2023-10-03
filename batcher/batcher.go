@@ -2,7 +2,7 @@
 
 package batcher
 
-import "gitlab.com/manytask/itmo-go/private/batcher/slow"
+import "gitlab.com/manytask/itmo-go/public/batcher/slow"
 
 type Batcher struct{}
 

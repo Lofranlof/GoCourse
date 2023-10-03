@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"gitlab.com/manytask/itmo-go/private/batcher/slow"
+	"gitlab.com/manytask/itmo-go/public/batcher/slow"
 )
 
 func TestSimple(t *testing.T) {

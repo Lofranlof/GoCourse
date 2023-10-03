@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gitlab.com/manytask/itmo-go/private/illegal"
+	"gitlab.com/manytask/itmo-go/public/illegal"
 )
 
 func TestStringFromBytes(t *testing.T) {

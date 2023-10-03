@@ -16,10 +16,10 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 )
 
-const importPath = "gitlab.com/manytask/itmo-go/private/olympics"
+const importPath = "gitlab.com/manytask/itmo-go/public/olympics"
 
 var binCache testtool.BinCache
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"gitlab.com/manytask/itmo-go/private/iprange"
+	"gitlab.com/manytask/itmo-go/public/iprange"
 )
 
 func ExampleParseList() {

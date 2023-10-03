@@ -14,10 +14,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"gopkg.in/yaml.v2"
 
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 )
 
-const importPath = "gitlab.com/manytask/itmo-go/private/gitfame/cmd/gitfame"
+const importPath = "gitlab.com/manytask/itmo-go/public/gitfame/cmd/gitfame"
 
 var binCache testtool.BinCache
 

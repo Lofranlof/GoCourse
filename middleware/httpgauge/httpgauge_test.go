@@ -9,7 +9,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/stretchr/testify/require"
-	"gitlab.com/manytask/itmo-go/private/middleware/httpgauge"
+	"gitlab.com/manytask/itmo-go/public/middleware/httpgauge"
 )
 
 func TestMiddleware(t *testing.T) {

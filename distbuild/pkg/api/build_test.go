@@ -12,9 +12,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/api"
-	mock "gitlab.com/manytask/itmo-go/private/distbuild/pkg/api/mock"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/api"
+	mock "gitlab.com/manytask/itmo-go/public/distbuild/pkg/api/mock"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/build"
 )
 
 //go:generate mockgen -package mock -destination mock/mock.go . Service

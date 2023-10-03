@@ -5,8 +5,8 @@ package main
 import (
 	"flag"
 
-	"gitlab.com/manytask/itmo-go/private/coverme/app"
-	"gitlab.com/manytask/itmo-go/private/coverme/models"
+	"gitlab.com/manytask/itmo-go/public/coverme/app"
+	"gitlab.com/manytask/itmo-go/public/coverme/models"
 )
 
 func main() {

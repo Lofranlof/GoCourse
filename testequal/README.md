@@ -27,7 +27,7 @@ func TestMath(t *testing.T) {
         actual  : 2
         message : 1 == 2
 FAIL
-FAIL    gitlab.com/manytask/itmo-go/private/testequal 0.003s
+FAIL    gitlab.com/manytask/itmo-go/public/testequal 0.003s
 FAIL
 ```
 

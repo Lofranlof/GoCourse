@@ -15,10 +15,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 )
 
-const urlfetchImportPath = "gitlab.com/manytask/itmo-go/private/urlfetch"
+const urlfetchImportPath = "gitlab.com/manytask/itmo-go/public/urlfetch"
 
 var binCache testtool.BinCache
 

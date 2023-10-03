@@ -285,7 +285,7 @@ Good example
   go test -cover
   PASS
   coverage: 42.9% of statements
-  ok  	gitlab.com/manytask/itmo-go/private/lectures/04-testing/size	0.001s
+  ok  	gitlab.com/manytask/itmo-go/public/lectures/04-testing/size	0.001s
 
 * Coverage
 
@@ -543,13 +543,13 @@ Good example
   ==================
   WARNING: DATA RACE
   Read at 0x00c000092090 by goroutine 8:
-    gitlab.com/manytask/itmo-go/private/lectures/04-testing/race.TestRace()
+    gitlab.com/manytask/itmo-go/public/lectures/04-testing/race.TestRace()
         /home/prime/Code/shad-go/lectures/04-testing/race/race_test.go:25 +0x144
     testing.tRunner()
         /usr/local/go/src/testing/testing.go:909 +0x199
 
   Previous write at 0x00c000092090 by goroutine 9:
-    gitlab.com/manytask/itmo-go/private/lectures/04-testing/race.TestRace.func1()
+    gitlab.com/manytask/itmo-go/public/lectures/04-testing/race.TestRace.func1()
         /home/prime/Code/shad-go/lectures/04-testing/race/race_test.go:17 +0x6c
 
   ...
@@ -557,7 +557,7 @@ Good example
   --- FAIL: TestRace (0.00s)
       testing.go:853: race detected during execution of test
   FAIL
-  FAIL	gitlab.com/manytask/itmo-go/private/lectures/04-testing/race	0.007s
+  FAIL	gitlab.com/manytask/itmo-go/public/lectures/04-testing/race	0.007s
 
 * White box testing
 

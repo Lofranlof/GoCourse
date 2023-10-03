@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"gitlab.com/manytask/itmo-go/private/gossip"
-	"gitlab.com/manytask/itmo-go/private/gossip/meshpb"
+	"gitlab.com/manytask/itmo-go/public/gossip"
+	"gitlab.com/manytask/itmo-go/public/gossip/meshpb"
 	"go.uber.org/goleak"
 	"google.golang.org/grpc"
 )

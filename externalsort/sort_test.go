@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 )
 
 func TestMerge(t *testing.T) {

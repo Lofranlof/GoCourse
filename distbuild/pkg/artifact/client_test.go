@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/artifact"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/artifact"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/build"
 )
 
 func TestArtifactTransfer(t *testing.T) {

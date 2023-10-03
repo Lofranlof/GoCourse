@@ -14,10 +14,10 @@ import (
 	"github.com/go-resty/resty/v2"
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 )
 
-const importPath = "gitlab.com/manytask/itmo-go/private/urlshortener"
+const importPath = "gitlab.com/manytask/itmo-go/public/urlshortener"
 
 var binCache testtool.BinCache
 

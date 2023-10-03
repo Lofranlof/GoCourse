@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"gitlab.com/manytask/itmo-go/private/pgfixture"
+	"gitlab.com/manytask/itmo-go/public/pgfixture"
 )
 
 func TestDao(t *testing.T) {

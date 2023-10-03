@@ -11,7 +11,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest/observer"
 
-	"gitlab.com/manytask/itmo-go/private/middleware/requestlog"
+	"gitlab.com/manytask/itmo-go/public/middleware/requestlog"
 )
 
 func TestRequestLog(t *testing.T) {

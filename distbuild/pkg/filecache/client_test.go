@@ -14,8 +14,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/filecache"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/filecache"
 )
 
 type env struct {

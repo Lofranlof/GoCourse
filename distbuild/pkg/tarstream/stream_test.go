@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sys/unix"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/tarstream"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/tarstream"
 )
 
 func TestTarStream(t *testing.T) {

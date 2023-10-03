@@ -7,7 +7,7 @@
 ✗ go test -v -run=^$ -bench=BenchmarkSprintf -memprofile=mem.out ./varfmt/...
 goos: linux
 goarch: amd64
-pkg: gitlab.com/manytask/itmo-go/private/varfmt
+pkg: gitlab.com/manytask/itmo-go/public/varfmt
 cpu: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
 BenchmarkSprintf
 BenchmarkSprintf/small
@@ -17,7 +17,7 @@ BenchmarkSprintf/small_string-8  	13282659	        84.48 ns/op	      16 B/op	   
 BenchmarkSprintf/big
 BenchmarkSprintf/big-8           	   20089	     62372 ns/op	   16388 B/op	       1 allocs/op
 PASS
-ok  	gitlab.com/manytask/itmo-go/private/varfmt	4.363s
+ok  	gitlab.com/manytask/itmo-go/public/varfmt	4.363s
 ```
 
 Сэмплы профайлера будут записаны в бинарный файл `mem.out`.
@@ -53,7 +53,7 @@ Showing nodes accounting for 715.73MB, 99.37% of 720.23MB total
 Dropped 24 nodes (cum <= 3.60MB)
       flat  flat%   sum%        cum   cum%
   715.73MB 99.37% 99.37%   716.73MB 99.51%  fmt.Sprintf
-         0     0% 99.37%   716.73MB 99.51%  gitlab.com/manytask/itmo-go/private/varfmt.BenchmarkSprintf.func1
+         0     0% 99.37%   716.73MB 99.51%  gitlab.com/manytask/itmo-go/public/varfmt.BenchmarkSprintf.func1
          0     0% 99.37%   716.73MB 99.51%  testing.(*B).launch
          0     0% 99.37%   716.73MB 99.51%  testing.(*B).runN
 (pprof)

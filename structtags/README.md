@@ -5,7 +5,7 @@
 ```
 goos: linux
 goarch: amd64
-pkg: gitlab.com/manytask/itmo-go/private/structtags
+pkg: gitlab.com/manytask/itmo-go/public/structtags
 cpu: Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz
 BenchmarkUnpacker/user-4         	 4158832	       268.2 ns/op	       0 B/op	       0 allocs/op
 BenchmarkUnpacker/good-4         	 1000000	      1198 ns/op	     220 B/op	       6 allocs/op

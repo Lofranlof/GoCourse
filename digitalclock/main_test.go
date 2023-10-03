@@ -18,10 +18,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 )
 
-const importPath = "gitlab.com/manytask/itmo-go/private/digitalclock"
+const importPath = "gitlab.com/manytask/itmo-go/public/digitalclock"
 
 var binCache testtool.BinCache
 

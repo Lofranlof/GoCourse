@@ -17,7 +17,7 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/perf/benchstat"
 
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 )
 
 const (
@@ -26,7 +26,7 @@ const (
 	privateRepoFlag = "private-repo"
 
 	testdataDir      = "testdata"
-	moduleImportPath = "gitlab.com/manytask/itmo-go/private"
+	moduleImportPath = "gitlab.com/manytask/itmo-go/public"
 )
 
 var testSubmissionCmd = &cobra.Command{

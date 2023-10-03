@@ -11,9 +11,9 @@ import (
 	"go.uber.org/goleak"
 	"go.uber.org/zap/zaptest"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/api"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/scheduler"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/api"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/scheduler"
 )
 
 const (

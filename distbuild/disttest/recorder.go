@@ -1,7 +1,7 @@
 package disttest
 
 import (
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/build"
 )
 
 type JobResult struct {

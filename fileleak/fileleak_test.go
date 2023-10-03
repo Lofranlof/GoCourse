@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/manytask/itmo-go/private/fileleak"
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/fileleak"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 )
 
 type fakeT struct {

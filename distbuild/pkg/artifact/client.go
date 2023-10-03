@@ -5,7 +5,7 @@ package artifact
 import (
 	"context"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/build"
 )
 
 // Download artifact from remote cache into local cache.

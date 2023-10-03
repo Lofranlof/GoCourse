@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/manytask/itmo-go/private/blowfish"
+	"gitlab.com/manytask/itmo-go/public/blowfish"
 )
 
 var _ cipher.Block = (*blowfish.Blowfish)(nil)

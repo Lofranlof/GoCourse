@@ -12,8 +12,8 @@ import (
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 
-	"gitlab.com/manytask/itmo-go/private/coverme/models"
-	"gitlab.com/manytask/itmo-go/private/coverme/utils"
+	"gitlab.com/manytask/itmo-go/public/coverme/models"
+	"gitlab.com/manytask/itmo-go/public/coverme/utils"
 )
 
 type App struct {

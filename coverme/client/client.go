@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitlab.com/manytask/itmo-go/private/coverme/models"
+	"gitlab.com/manytask/itmo-go/public/coverme/models"
 )
 
 type Client struct {

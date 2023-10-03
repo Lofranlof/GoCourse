@@ -7,7 +7,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/build"
 )
 
 type BuildClient struct{}

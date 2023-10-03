@@ -1,4 +1,4 @@
-module gitlab.com/manytask/itmo-go/private/wasm/flappygopher
+module gitlab.com/manytask/itmo-go/public/wasm/flappygopher
 
 go 1.20
 

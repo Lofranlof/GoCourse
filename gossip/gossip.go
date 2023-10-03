@@ -5,8 +5,7 @@ package gossip
 import (
 	"time"
 
-	"gitlab.com/manytask/itmo-go/private/gossip/meshpb"
-	"google.golang.org/grpc"
+	"gitlab.com/manytask/itmo-go/public/gossip/meshpb"
 )
 
 type PeerConfig struct {

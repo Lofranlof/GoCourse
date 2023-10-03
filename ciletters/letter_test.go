@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 )
 
 type testCase struct {
@@ -93,7 +93,7 @@ testtool: copying !change files
 testtool: copying testdata directory
 testtool: copying go.mod, go.sum and .golangci.yml
 testtool: running tests
-testtool: > go test -mod readonly -tags private -c -o /tmp/bincache730817117/5d83984f885e61c1 gitlab.com/manytask/itmo-go/private/sum
+testtool: > go test -mod readonly -tags private -c -o /tmp/bincache730817117/5d83984f885e61c1 gitlab.com/manytask/itmo-go/public/sum
 --- FAIL: TestSum (0.00s)
     sum_test.go:19: 2 + 2 == 0 != 4
     sum_test.go:19: 9223372036854775807 + 1 == 0 != -9223372036854775808
@@ -113,7 +113,7 @@ ERROR: Job failed: exit code 1`,
         Stage: test, Job grade
             testtool: copying go.mod, go.sum and .golangci.yml
             testtool: running tests
-            testtool: > go test -mod readonly -tags private -c -o /tmp/bincache730817117/5d83984f885e61c1 gitlab.com/manytask/itmo-go/private/sum
+            testtool: > go test -mod readonly -tags private -c -o /tmp/bincache730817117/5d83984f885e61c1 gitlab.com/manytask/itmo-go/public/sum
             --- FAIL: TestSum (0.00s)
                 sum_test.go:19: 2 + 2 == 0 != 4
                 sum_test.go:19: 9223372036854775807 + 1 == 0 != -9223372036854775808
@@ -156,7 +156,7 @@ testtool: copying !change files
 testtool: copying testdata directory
 testtool: copying go.mod, go.sum and .golangci.yml
 testtool: running tests
-testtool: > go test -mod readonly -tags private -c -o /tmp/bincache730817117/5d83984f885e61c1 gitlab.com/manytask/itmo-go/private/sum
+testtool: > go test -mod readonly -tags private -c -o /tmp/bincache730817117/5d83984f885e61c1 gitlab.com/manytask/itmo-go/public/sum
 --- FAIL: TestSum (0.00s)
     sum_test.go:19: 2 + 2 == 0 != 4
     sum_test.go:19: 9223372036854775807 + 1 == 0 != -9223372036854775808
@@ -188,7 +188,7 @@ ERROR: Job failed: exit code 1`,
         Stage: %v, Job %v
             testtool: copying go.mod, go.sum and .golangci.yml
             testtool: running tests
-            testtool: > go test -mod readonly -tags private -c -o /tmp/bincache730817117/5d83984f885e61c1 gitlab.com/manytask/itmo-go/private/sum
+            testtool: > go test -mod readonly -tags private -c -o /tmp/bincache730817117/5d83984f885e61c1 gitlab.com/manytask/itmo-go/public/sum
             --- FAIL: TestSum (0.00s)
                 sum_test.go:19: 2 + 2 == 0 != 4
                 sum_test.go:19: 9223372036854775807 + 1 == 0 != -9223372036854775808

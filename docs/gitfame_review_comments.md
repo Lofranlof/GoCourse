@@ -63,8 +63,8 @@ import (
 	"flag"
 	"log"
 
-	"gitlab.com/manytask/itmo-go/private/gitfame/configs"
-	"gitlab.com/manytask/itmo-go/private/gitfame/internal"
+	"gitlab.com/manytask/itmo-go/public/gitfame/configs"
+	"gitlab.com/manytask/itmo-go/public/gitfame/internal"
 
 	"github.com/spf13/pflag"
 
@@ -81,8 +81,8 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"gitlab.com/manytask/itmo-go/private/gitfame/configs"
-	"gitlab.com/manytask/itmo-go/private/gitfame/internal"
+	"gitlab.com/manytask/itmo-go/public/gitfame/configs"
+	"gitlab.com/manytask/itmo-go/public/gitfame/internal"
 )
 ```
 

@@ -3,7 +3,7 @@ package api
 import (
 	"context"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/build"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/build"
 )
 
 // JobResult описывает результат работы джоба.

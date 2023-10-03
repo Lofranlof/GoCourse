@@ -17,13 +17,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/api"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/artifact"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/client"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/dist"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/filecache"
-	"gitlab.com/manytask/itmo-go/private/distbuild/pkg/worker"
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/api"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/artifact"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/client"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/dist"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/filecache"
+	"gitlab.com/manytask/itmo-go/public/distbuild/pkg/worker"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 
 	"go.uber.org/zap"
 )

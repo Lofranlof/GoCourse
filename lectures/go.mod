@@ -1,4 +1,4 @@
-module gitlab.com/manytask/itmo-go/private/lectures
+module gitlab.com/manytask/itmo-go/public/lectures
 
 go 1.20
 

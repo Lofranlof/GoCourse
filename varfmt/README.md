@@ -23,7 +23,7 @@
 ```
 goos: linux
 goarch: amd64
-pkg: gitlab.com/manytask/itmo-go/private/varfmt
+pkg: gitlab.com/manytask/itmo-go/public/varfmt
 BenchmarkFormat/small_int-4         	 4744729	       263 ns/op	      64 B/op	       4 allocs/op
 BenchmarkFormat/small_string-4      	 2388128	       484 ns/op	     168 B/op	       8 allocs/op
 BenchmarkFormat/big-4               	    8997	    127827 ns/op	  194656 B/op	      41 allocs/op

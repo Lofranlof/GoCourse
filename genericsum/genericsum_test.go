@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"gitlab.com/manytask/itmo-go/private/genericsum"
+	"gitlab.com/manytask/itmo-go/public/genericsum"
 )
 
 func TestMin(t *testing.T) {

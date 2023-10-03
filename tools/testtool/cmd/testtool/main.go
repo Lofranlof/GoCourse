@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gitlab.com/manytask/itmo-go/private/tools/testtool/commands"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool/commands"
 )
 
 func main() {

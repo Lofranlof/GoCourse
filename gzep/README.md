@@ -6,14 +6,14 @@
 ```
 goos: linux
 goarch: amd64
-pkg: gitlab.com/manytask/itmo-go/private/gzep
+pkg: gitlab.com/manytask/itmo-go/public/gzep
 cpu: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
 BenchmarkEncodeSimple
 BenchmarkEncodeSimple-8   	    7047	    176628 ns/op	  813872 B/op	      17 allocs/op
 BenchmarkEncode
 BenchmarkEncode-8         	   41706	     32616 ns/op	      19 B/op	       0 allocs/op
 PASS
-ok  	gitlab.com/manytask/itmo-go/private/gzep	3.625s
+ok  	gitlab.com/manytask/itmo-go/public/gzep	3.625s
 ```
 
 ### С чего начать?

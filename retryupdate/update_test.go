@@ -1,6 +1,6 @@
 package retryupdate_test
 
-//go:generate mockgen -destination mock_test.go -package retryupdate_test gitlab.com/manytask/itmo-go/private/retryupdate/kvapi Client
+//go:generate mockgen -destination mock_test.go -package retryupdate_test gitlab.com/manytask/itmo-go/public/retryupdate/kvapi Client
 
 import (
 	"errors"
@@ -11,8 +11,8 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/manytask/itmo-go/private/retryupdate"
-	"gitlab.com/manytask/itmo-go/private/retryupdate/kvapi"
+	"gitlab.com/manytask/itmo-go/public/retryupdate"
+	"gitlab.com/manytask/itmo-go/public/retryupdate/kvapi"
 )
 
 var (

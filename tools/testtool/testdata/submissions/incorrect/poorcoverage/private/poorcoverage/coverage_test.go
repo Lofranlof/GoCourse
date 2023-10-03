@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"gitlab.com/manytask/itmo-go/private/poorcoverage"
+	"gitlab.com/manytask/itmo-go/public/poorcoverage"
 )
 
 // min coverage: . 100%

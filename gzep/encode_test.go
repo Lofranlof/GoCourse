@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gitlab.com/manytask/itmo-go/private/gzep"
-	"gitlab.com/manytask/itmo-go/private/tools/testtool"
+	"gitlab.com/manytask/itmo-go/public/gzep"
+	"gitlab.com/manytask/itmo-go/public/tools/testtool"
 )
 
 func BenchmarkEncode(b *testing.B) {
