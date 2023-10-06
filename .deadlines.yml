@@ -1,6 +1,6 @@
-- group:    Bonus
-  start:    11-02-2023 18:00
-  deadline: 29-05-2023 23:59
+- group: Bonus
+  start: 30-09-2023 14:00
+  deadline: 18-02-2024 23:59
   tasks:
     - task: consistenthash
       score: 200
@@ -13,34 +13,34 @@
     - task: wasm
       score: 300
 
-- group:    Analysis
-  start:    29-04-2023 18:00
-  deadline: 10-05-2023 23:59
+- group: Analysis
+  start: 30-09-2023 14:00
+  deadline: 11-02-2023 23:59
   tasks:
     - task: testifycheck
       score: 200
     - task: gzep
       score: 100
 
-- group:    "[HW] Dist Build"
-  start:    26-04-2023 12:00
-  deadline: 29-05-2023 23:59
+- group: "[HW] Dist Build"
+  start: 30-09-2023 14:00
+  deadline: 04-02-2024 23:59
   tasks:
     - task: distbuild
       score: 0
 
-- group:    Low level
-  start:    22-04-2023 16:00
-  deadline: 03-05-2023 23:59
+- group: Low level
+  start: 30-09-2023 14:00
+  deadline: 28-01-2024 23:59
   tasks:
     - task: illegal
       score: 100
     - task: blowfish
       score: 100
 
-- group:    Reflect
-  start:    15-04-2023 16:00
-  deadline: 25-04-2023 23:59
+- group: Reflect
+  start: 30-09-2023 14:00
+  deadline: 21-01-2024 23:59
   tasks:
     - task: reversemap
       score: 100
@@ -51,9 +51,9 @@
     - task: structtags
       score: 100
 
-- group:    SQL
-  start:    08-04-2023 16:00
-  deadline: 18-04-2023 23:59
+- group: SQL
+  start: 30-09-2023 14:00
+  deadline: 31-12-2023 23:59
   tasks:
     - task: dao
       score: 100
@@ -64,9 +64,9 @@
     - task: wscat
       score: 200
 
-- group:    Generics
-  start:    01-04-2023 16:00
-  deadline: 11-04-2023 23:59
+- group: Generics
+  start: 30-09-2023 14:00
+  deadline: 24-12-2023 23:59
   tasks:
     - task: genericsum
       score: 100
@@ -75,9 +75,9 @@
     - task: coverme
       score: 300
 
-- group:    HTTP
-  start:    25-03-2023 16:00
-  deadline: 06-04-2023 23:59
+- group: HTTP
+  start: 30-09-2023 14:00
+  deadline: 17-12-2023 23:59
   tasks:
     - task: urlshortener
       score: 100
@@ -90,9 +90,9 @@
     - task: firewall
       score: 200
 
-- group:    Concurrency with shared memory
-  start:    18-03-2023 15:59
-  deadline: 29-03-2023 23:59
+- group: Concurrency with shared memory
+  start: 30-09-2023 14:00
+  deadline: 03-12-2023 23:59
   tasks:
     - task: dupcall
       score: 200
@@ -103,9 +103,9 @@
     - task: pubsub
       score: 300
 
-- group:    Testing
-  start:    11-03-2023 13:00
-  deadline: 21-03-2023 23:59
+- group: Testing
+  start: 30-09-2023 14:00
+  deadline: 26-11-2023 23:59
   tasks:
     - task: testequal
       score: 100
@@ -118,16 +118,16 @@
     - task: iprange
       score: 100
 
-- group:    "[HW] Gitfame"
-  start:    04-03-2023 16:30
-  deadline: 19-03-2023 23:59
+- group: "[HW] Gitfame"
+  start: 30-09-2023 14:00
+  deadline: 19-11-2023 23:59
   tasks:
-   - task: gitfame
-     score: 0
+    - task: gitfame
+      score: 0
 
-- group:    Goroutines
-  start:    04-03-2023 16:30
-  deadline: 14-03-2023 23:59
+- group: Goroutines
+  start: 30-09-2023 14:00
+  deadline: 05-11-2023 23:59
   tasks:
     - task: tour1
       score: 100
@@ -142,9 +142,9 @@
     - task: ratelimit
       score: 100
 
-- group:    Interfaces
-  start:    25-02-2023 16:30
-  deadline: 07-03-2023 23:59
+- group: Interfaces
+  start: 30-09-2023 14:00
+  deadline: 29-10-2023 23:59
   tasks:
     - task: otp
       score: 100
@@ -157,9 +157,9 @@
     - task: ciletters
       score: 100
 
-- group:    Basics
-  start:    18-02-2023 16:00
-  deadline: 28-02-2023 23:59
+- group: Basics
+  start: 30-09-2023 14:00
+  deadline: 22-10-2023 23:59
   tasks:
     - task: hotelbusiness
       score: 100
@@ -174,7 +174,7 @@
     - task: forth
       score: 100
 
-- group:    Hello World
+- group: Hello World
   start: 30-09-2023 14:00
   deadline: 15-10-2023 23:59
   tasks:
