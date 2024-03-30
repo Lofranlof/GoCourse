@@ -2,12 +2,6 @@
 
 Для работы с кодом нужен go 1.18 или выше.
 
-```sh
-git clone https://gitlab.com/manytask/itmo-go/public.git
-cd shad-go
-go test ./sum/...
-```
-
 Проект можно открыть в любой go IDE с поддержкой модулей.
 
 ## Информация
