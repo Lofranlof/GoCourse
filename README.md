@@ -13,88 +13,89 @@
 ## Порядок выполнения задач
 
 - **Hello World**
-  - sum
-  - tour0
-  - wordcount
-  - urlfetch
-  - fetchall
+  - sum (100)
+  - tour0 (100)
+  - wordcount (100)
+  - urlfetch (100)
+  - fetchall (100)
 
 - **Basics**
-  - hotelbusiness
-  - hogwarts
-  - utf8
-  - varfmt
-  - speller
-  - forth
+  - hotelbusiness (100)
+  - hogwarts (100)
+  - utf8 (100)
+  - varfmt (100)
+  - speller (100)
+  - forth (100)
 
 - **Interfaces**
-  - otp
-  - lrucache
-  - externalsort
-  - retryupdate
-  - ciletters
-
-- **Hw1**
-  - gitfame
+  - otp (100)
+  - lrucache (100)
+  - externalsort (100)
+  - retryupdate (100)
+  - ciletters (100)
 
 - **Goroutines**
-  - tour1
-  - once
-  - rwmutex
-  - waitgroup
-  - cond
-  - ratelimit
+  - tour1 (100)
+  - once (100)
+  - rwmutex (100)
+  - waitgroup (100)
+  - cond (100)
+  - ratelimit (100)
+  
+- **Hw1**
+  - gitfame (0)
 
 - **Testing**
-  - testequal
-  - fileleak
-  - tabletest
-  - tparallel
+  - testequal (100)
+  - fileleak (100)
+  - tabletest (200)
+  - tparallel (100)
+  - iprange (100)
 
 - **Concurrency with shared memory**
-  - iprange
-  - dupcall
-  - keylock
-  - batcher
-  - pubsub
+  - dupcall (200)
+  - keylock (200)
+  - batcher (200)
+  - pubsub (300)
 
 - **Http**
-  - urlshortener
-  - digitalclock
-  - middleware
-  - olympics
-  - firewall
+  - urlshortener (100)
+  - digitalclock (100)
+  - middleware (200)
+  - olympics (200)
+  - firewall (200)
 
 - **Generics**
-  - coverme
-  - genericsum
-  - treeiter
+  - genericsum (100)
+  - treeiter (100)
+  - coverme (300)
 
 - **SQL**
-  - dao
-  - ledger
-  - shopfront
-  - wscat
+  - dao (100)
+  - ledger (200)
+  - shopfront (100)
+  - wscat (200)
 
 - **Reflect**
-  - reversemap
-  - jsonlist
-  - jsonrpc
-  - structtags
+  - reversemap (100)
+  - jsonlist (100)
+  - jsonrpc (100)
+  - structtags (100)
 
 - **Low level**
-  - consistenthash
-  - gossip
-  - illegal
-  - blowfish
-  - smartsched
+  - illegal (100)
+  - blowfish (100)
 
 - **Hw2**
-  - distbuild
+  - distbuild (0)
+ 
+- **Analysis**
+  - testifycheck (200)
+  - gzep (100)
 
 - **Bonus**
-  - wasm
-  - testifycheck
-  - gzep
-  - bonus
+  - consistenthash (200)
+  - gossip (300)
+  - smartsched (200)
+  - wasm (300)
 
